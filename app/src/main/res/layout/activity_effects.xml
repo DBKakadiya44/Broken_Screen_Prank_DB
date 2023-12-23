@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondbg">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select Cracker Screen"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner_container"
+        android:layout_below="@+id/top"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/crack1_imageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/crack_screen_type1" />
+
+            <ImageView
+                android:id="@+id/crack2_imageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/crack_screen_type2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/crack3_imageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/crack_screen_type3" />
+
+            <ImageView
+                android:id="@+id/crack4_imageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/crack_screen_type4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/crack5_imageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/crack_screen_type5" />
+
+            <ImageView
+                android:id="@+id/crack6_imageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/crack_screen_type6" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
